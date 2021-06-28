@@ -1,5 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import add, {substract} from './add'
+
+console.log(add(1, 2))
+console.log(substract(1, 2))
+
+class Animal{
+  constructor(){
+    this.type = 'animal'
+  }
+}
+
+class Human extends Animal{
+  constructor(height){
+    super()
+    this.height = height
+  }
+}
+
+console.log(new Human(162))
 
 function App() {
   return (
@@ -18,6 +37,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <h1>
+        This is my first React code, Fantastic!!!
+      </h1>
     </div>
   );
 }
