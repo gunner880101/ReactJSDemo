@@ -21,6 +21,7 @@ class Human extends Animal{
 console.log(new Human(162))
 
 function App() {
+  var arr = [1,2,3,4,5]
   return (
     <div className="App">
       <header className="App-header">
@@ -37,9 +38,21 @@ function App() {
           Learn React
         </a>
       </header>
-      <h1>
+      <h1 style={{color: 'red'}}>
         This is my first React code, Fantastic!!!
       </h1>
+      {
+        arr.map((v,k) => {
+          return <li>{v}</li>
+        })
+      }
+      {/* This is comment */}
+      <h5>
+        <label htmlFor="input">
+          <h2>INPUT</h2>
+          <input type="text" id="input"/>
+        </label>
+      </h5>
     </div>
   );
 }
